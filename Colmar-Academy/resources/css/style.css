@@ -1,0 +1,556 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(http://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(http://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_dJE3gnD_vx3rCs.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(http://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_dJE3gnD_vx3rCs.woff2) format('woff2');
+}
+
+html {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  line-height: 24px;
+  color: #4F4F4F;
+}
+
+header {
+  background-color: white;
+  height: 4rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.logo img{
+  display: flex;
+  height: 2rem;
+  margin: 1rem 0.5em 1rem 1.5rem;
+}
+
+.logotype {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.logotype ul {
+  display: flex;
+  color: #AAAAAA;
+}
+
+.logotype ul li:first-child {
+  font-weight: 700;
+  color: #424242;
+}
+
+.menu {
+  align-items: center;
+  flex-grow: 2;
+}
+
+nav a{
+  text-decoration: none;
+  color: #4F4F4F;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1.5rem;
+  color: #424242;
+}
+
+nav ul li {
+  display: inline;
+  padding: 1rem .5rem;
+}
+
+header nav a:hover {
+  transition: color 200ms linear;
+  color: #5EBDFF;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+/* header mobile */
+
+@media only screen and (max-width:768px) {
+  .container {
+    width: 100%;
+    display: flex;
+  }
+
+  .logo, .logotype ul, nav.menu {
+    display: none;
+  }
+
+  nav.menu-mobile, nav.menu-mobile ul{
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+/*masthead*/
+.bg {
+  background-color: #DADADA;
+}
+
+.masthead {
+  display: flex;
+  align-items: center;
+}
+
+.banner {
+  max-width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.banner img {
+  width: 100%;
+  display: flex;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+}
+
+.cta {
+  max-width: 100%;
+  align-items: center;
+}
+
+.cta h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 1.5rem 0;
+}
+
+.button {
+  background-color: #5EBDFF;
+  width: 85%;
+  border-radius: 4px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 8px 2px;
+}
+
+a.button  {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover.button  {
+  color: #5EBDFF;
+  background-color: #FFFFFF;
+  transition: color 400ms ease;
+}
+
+/*banner mobile  */
+@media only screen and (max-width:768px) {
+    .masthead {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .right-column {
+      padding: 2rem 1rem;
+      line-height: 2rem;
+      max-width: 100%;
+    }
+
+    .cta h3{
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 2.5rem;
+      padding: 2rem 0 1.5rem;
+    }
+
+    .banner {
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .banner img {
+      padding-bottom: 2rem;
+    }
+
+    .button {
+      background-color: #5EBDFF;
+      max-width: 100%;
+      border-radius: 4px;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+}
+
+/*middle section*/
+.information {
+  display: flex;
+  color: #4F4F4F;
+}
+
+.feature {
+  margin: 2rem 1.5rem;
+  max-width: 60%;
+}
+
+.feature img {
+  width: 100%;
+}
+
+.feature h2 {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.feature p {
+  padding-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+.feature span {
+  font-family: arial, sans-serif;
+  font-size: 0.85rem;
+}
+
+.about {
+  color: #4F4F4F;
+  display: flex;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  flex-direction: column;
+  border-left: 1px solid #DADADA;
+  max-width: 40%;
+}
+
+.about-info {
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #DADADA;
+}
+
+.about-info:last-child {
+  background-color: #DADADA;
+}
+
+.about-image {
+  width: 35%;
+}
+
+.mobile-about-image {
+  display: none;
+}
+
+.about-image img {
+  width: 100%;
+}
+
+.description {
+  width: 65%;
+  padding-left: 1rem;
+}
+
+.description p {
+  padding-top: 1rem;
+}
+
+.description a {
+  display: flex;
+  padding-top: 1.5rem;
+  text-decoration: none;
+  color: #5EBDFF;
+}
+
+.description a:hover {
+  transition: color 200ms ease-in-out;
+  color: #197B9D;
+}
+
+/*middle section mobile*/
+ @media only screen and (max-width: 768px) {
+   .feature, .about-image {
+     display: none;
+   }
+
+   .about {
+     color: #4F4F4F;
+     display: flex;
+     font-size: 0.9rem;
+     line-height: 1.2rem;
+     flex-direction: column;
+     max-width: 100%;
+     background-color: #FFFFFF;
+   }
+
+   .about-info {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 1rem 1rem;
+     border: none;
+     max-width: 100%;
+   }
+
+   .about-info:last-child {
+     background-color: #FFFFFF;
+   }
+
+   .mobile-about-image {
+     display: block;
+     width: 100%;
+   }
+
+   .mobile-about-image img {
+     width: 100%;
+   }
+
+   .description {
+     width: 100%;
+     padding-top: 1rem;
+   }
+ }
+
+
+/*learning section*/
+.light-bg {
+  background-color: #F1F1F1;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 0rem 2.5rem;
+}
+
+.card {
+  margin: 2rem 2rem;
+  background-color: white;
+  max-width: 25%;
+}
+
+.card-image img{
+  width: 100%;
+}
+
+.card-info {
+  padding: 1rem 1rem 1.5rem;
+  align-items: center;
+}
+
+.card-info h3 {
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+}
+
+.card-info span {
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+
+.card-info p {
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  line-height: 1rem;
+}
+
+/*mobile learning section*/
+@media only screen and (max-width:768px) {
+  .card-image, .card-info span, .card-info p {
+    display: none;
+  }
+
+  .title {
+    padding-bottom: 1rem;
+    border-top: 1px solid #DADADA;
+    }
+
+  .light-bg {
+    background-color: white;
+  }
+
+  .learning {
+    width: 100%;
+    margin: auto;
+  }
+
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card {
+    display: inline-block;
+    background-color: #DADADA;
+    margin: 0.5rem;
+    max-width: 100%;
+  }
+
+  .card-info {
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .card:last-child {
+    margin-bottom: 2rem;
+  }
+
+  .card-info h3 {
+    font-size: 1.25rem;
+  }
+
+}
+
+
+/*last section*/
+
+.thesis {
+ display: flex;
+}
+
+.video-feature {
+  margin: 2rem 1.5rem;
+  max-width: 60%;
+}
+
+.video-feature video {
+  width: 100%;
+}
+
+.video-feature h2 {
+  padding-top: 1.5rem;
+}
+
+.video-feature p {
+  padding: 0.5rem 0 2rem 0;
+  line-height: 1.5rem;
+}
+
+.thesis-right {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  margin-top: 2rem;
+  line-height: 1.2rem;
+}
+
+.thesis-info:first-child {
+  background-color: #DADADA;
+}
+
+.thesis-info {
+  display: flex;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.thesis-image {
+  max-width: 35%;
+}
+
+.thesis-image img {
+  width: 100%;
+}
+
+@media only screen and (max-width:768px) {
+  .video-feature h2, .video-feature p, .thesis-right {
+    display: none;
+  }
+
+  .video-feature {
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/*footer*/
+footer {
+  font-size: 0.85rem;
+  padding: 1rem 0 0 1.5rem;
+  border-top: 1px solid #DADADA;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright nav{
+  color: #4F4F4F;
+}
+
+.copyright nav a:hover {
+  color: #DADADA;
+  transition: color 200ms ease-in;
+}
+
+@media only screen and (max-width:768px) {
+  .copyright {
+    margin: 1rem 0 1rem;
+  }
+
+  .copyright nav{
+    display: none;
+  }
+}
